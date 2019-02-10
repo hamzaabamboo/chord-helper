@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { parse } from "chord-magic";
+import { parse } from "./library/chord-magic";
 import { chordNotes } from "./library/chord-notes";
 import { Piano, KeyboardShortcuts, MidiNumbers } from "react-piano";
 import { noteNumberToName } from "midiutils";
