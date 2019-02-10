@@ -50,7 +50,7 @@ function parseAltered(str) {
   let match = pattern.exec(str)
   const res = {};
   while (match != null) {
-    res[match[3]] = {
+    res[match[3] % 13] = {
       'b': 'flat',
       'bb': 'doubleflat',
       '#': 'sharp'
