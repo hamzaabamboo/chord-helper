@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Comic Sans MS', cursive, sans-serif
 }
 
 .App {
@@ -14,6 +15,9 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-content: center;
+  height: 100vh;
+  background-color: #ff6b81;
 }
 
 .piano-container {
@@ -24,4 +28,39 @@ input {
   text-align: center;
   font-size: 2em;
   padding: 10px 20px;
+  border-radius: 21px;
+  border: none;
+}
+
+.MyCoolPiano .ReactPiano__Key--accidental {
+  background: #2f3542;
+  border: 1px solid #2f3542;
+}
+
+.MyCoolPiano .ReactPiano__Key--natural {
+  background: #ffffff;
+  border: 1px solid #bbb;
+  margin-right: 0;
+}
+
+
+.MyCoolPiano .ReactPiano__Key--active.ReactPiano__Key--accidental {
+  background: #5352ed;
+}
+
+.MyCoolPiano .ReactPiano__Key--active.ReactPiano__Key--natural {
+  background: #70a1ff;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.notations ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.notations li {
+  list-style-type: none;
 }
