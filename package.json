@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "chord-magic": "^2.1.1",
+    "gh-pages-cli": "^0.2.0",
     "midiutils": "^0.0.4",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
@@ -14,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && yarn run gh-pages",
+    "gh-pages": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
