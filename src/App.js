@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { parse } from "./library/chord-magic";
 import { chordNotes } from "./library/chord-notes";
+import { scale } from "./library/notes-scale";
 import { Piano, KeyboardShortcuts, MidiNumbers } from "./library/react-piano";
 import { noteNumberToName } from "midiutils";
 import "react-piano/dist/styles.css";
@@ -80,6 +81,7 @@ class App extends Component {
             <li> Added(add9 / add11): Not yet implemented </li>
           </ul>
         </div>
+        <p>{parse(currentChord) && scale(parse(currentChord).root)}</p>
       </div>
     );
   }

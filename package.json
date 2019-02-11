@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "chord-magic": "^2.1.1",
-    "gh-pages-cli": "^0.2.0",
+    "gh-pages": "^2.0.1",
     "midiutils": "^0.0.4",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
@@ -17,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "react-scripts build && yarn run gh-pages",
-    "gh-pages": "gh-pages -d build"
+    "gh-pages": "gh-pages -d build -p chord-helper"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +27,7 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "homepage": "http://hamzaabamboo.github.io/chord-helper"
+
 }
